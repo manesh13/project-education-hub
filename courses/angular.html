@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="../img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="codepixer">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>AngularJS</title>
+
+	<!--
+			Google Font
+			============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500i" rel="stylesheet">
+
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+	<link rel="stylesheet" href="../css/linearicons.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/magnific-popup.css">
+	<link rel="stylesheet" href="../css/nice-select.css">
+	<link rel="stylesheet" href="../css/animate.min.css">
+	<link rel="stylesheet" href="../css/owl.carousel.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/c.css">
+</head>
+
+<body>
+
+	<!-- Start Header Area -->
+	<header id="header">
+		<div class="container">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+					<a href="index.html"><img src="../img/logo.png" alt="" title="" /></a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<?php
+						session_start();
+						if(isset($_SESSION['signed_in']))
+							echo '<li><a href="signout.php"> Signout</a></li>
+							<li><a href="courses.html">Courses</a></li>
+							<li><a href="blog.html">Profile</a></li>';
+						else
+							echo '<li><a href="login.html">Login</a></li>
+						<li><a href="register.html">Register</a></li>';
+						?>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav><!-- #nav-menu-container -->
+			</div>
+		</div>
+	</header>
+	<!-- End Header Area -->
+
+	<!-- Start About Area -->
+	<section class="about-area section-gap">
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/2OHbjep_WjQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: relative;"></iframe>
+				<a href="/payment.html?id=8" style="border: 1px solid black; border-radius: 15px;margin: auto; padding: 5px; color: black;  "><center>Click here to download course pdf</center></a>
+				<br>
+				<h3><center>Price : $10</h3></center>
+			</div>
+			<br>
+			<p style="margin-left: 60px; padding: 10px;">
+
+				<h3>What is AngularJS?</h3><br><br>
+
+AngularJS is a structured, JavaScript framework used for dynamic one-page applications. Being a framework it uses code templates written in HTML in order to perform particular function or command. The data binding and dependency functionalities of Angular JS saves time invested in writing lengthy codes. All these features are packaged in a browser that makes it a suitable server technology.
+ There is a considerable difference between the Static documents and dynamic applications. Dynamic applications typically use a library and a framework that supports creating web apps. While the library contains a number of functions used to perform certain operations, framework automatically takes the data and calls the functions when needed. However Angular JS creates new HTML constructs that eventually eliminates this mismatch effectively. It creates new syntax with the help of directives.<br><br>
+
+<b style="color: black;">Concepts of AngularJS<br><br></b>
+
+Few things you need to know to before starting with AngularJS:<br>
+•Modules – A module can be defined as a container that consists of various application parts. The module is a set of functions defined in a JavaScript file. Module divides an application into small and reusable components.<br>
+•Directives – Directives indicate the compiler to associate a behavior to the DOM element or modify it. Angular JS contains several directives such as ng-app, ng-controller, ng-view, ng-if, etc.<br>
+•Expressions – Angular JS expressions are expressed with {{ }} which indicate a data binding in HTML.<br> These expressions can be added into the HTML templates. Expressions do not support control flow statements while support the filters.<br>
+•Controller – It is a JavaScript object constructor function that controls the AngularJS applications.<br>
+•Scope – It is a JavaScript object that acts as a bridge between the Controller and the View. It is the source of data in AngularJS. Each data manipulation and assignment takes place with the help of Scope object.<br>
+•Data Binding – It coordinates model and view about any changes in either of these two.<br>
+•Validations- Validations take place with the help of AngularJS forms and controls.<br>
+•Filters – These let you display the formatting of data on DOM and extend the behavior of directives and binding expressions. Filters format the values or apply specific.<br>
+•Services – These are singletons that are used by directives, controllers, or other services.
+•Routing – The service $routeProvider handles the operations of Routing. It divides the map into various views . It helps split the Single Page Applications into different views.<br>
+•Dependency Injection – It is a design pattern used to handle the dependencies of various components of a software. It lets you develop loosely-structured architectures.<br>
+•Testing – The codes developed by Dependency Injections are tested. Some of the popular testing frameworks like Jasmine and Karma are two widely-used technologies.<br><br>
+
+<b style="color: black;">Advantages of AngularJS<br><br></b>
+
+Following are the reasons behind increasing popularity of AngularJS –<br>
+•Easy Language – Learning and working on AngularJS is quite easy as few simple modifications can let you achieve the benefits of AngularJS in minimum possible time.<br>
+•Two-way binding of data – Angular JS allows you to do two-way data binding that enables view and model to coordinate with the changes in one another.<br>
+•No need of observable functions – With ANgular JS you would not have to use observable functions as it analyzes the DOM and creates the bindings on the basis of Angular-specific element attributes. This saves times in writing lengthy codes.<br>
+•Automatically joins the components – Most of the framework require the developers to divide the application into multiple small MVC components and write codes to join them again. However AngularJS solves this issue as it combines the components automatically.<br><br>
+
+<b style="color: black;">Disadvantages of AngularJS <br></b>
+•Not Secure – Its applications are not safe. Server side authentication and authorization is necessary to keep an application secure.<br>
+•Not Degradable – If user of your application disables the JavaScript then it displays nothing except basic page.<br>
+•Complex at times – At times AngularJS becomes complex to handles as there are multiple ways to do the same thing. This creates confusion and requires considerable efforts.<br><br>
+History <br><br>
+
+It was originally developed in 2009 by Misko Hevery at Brat Tech LLC. It is now maintained by Google.  Release 1.4.8 is the present stable version, as of November 19, 2015.
+
+</p>
+		</div>
+	</section>
+	<!-- End About Area -->
+
+	<!-- Start Footer Area -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by Educature
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+    <!-- End Footer Area -->
+
+	<!-- ####################### Start Scroll to Top Area ####################### -->
+	<div id="back-top">
+		<a title="Go to Top" href="#"></a>
+	</div>
+	<!-- ####################### End Scroll to Top Area ####################### -->
+
+	<script src="../js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="../js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="../js/easing.min.js"></script>
+	<script src="../js/hoverIntent.js"></script>
+	<script src="../js/superfish.min.js"></script>
+	<script src="../js/jquery.ajaxchimp.min.js"></script>
+	<script src="../js/jquery.magnific-popup.min.js"></script>
+	<script src="../js/owl.carousel.min.js"></script>
+	<script src="../js/owl-carousel-thumb.min.js"></script>
+	<script src="../js/jquery.sticky.js"></script>
+	<script src="../js/jquery.nice-select.min.js"></script>
+	<script src="../js/parallax.min.js"></script>
+	<script src="../js/waypoints.min.js"></script>
+	<script src="../js/wow.min.js"></script>
+	<script src="../js/jquery.counterup.min.js"></script>
+	<script src="../js/mail-script.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+
+</html>

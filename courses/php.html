@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="../img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="codepixer">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>PHP</title>
+
+	<!--
+			Google Font
+			============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500i" rel="stylesheet">
+
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+	<link rel="stylesheet" href="../css/linearicons.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/magnific-popup.css">
+	<link rel="stylesheet" href="../css/nice-select.css">
+	<link rel="stylesheet" href="../css/animate.min.css">
+	<link rel="stylesheet" href="../css/owl.carousel.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/c.css">
+</head>
+
+<body>
+
+	<!-- Start Header Area -->
+	<header id="header">
+		<div class="container">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+					<a href="index.html"><img src="../img/logo.png" alt="" title="" /></a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<?php
+						session_start();
+						if(isset($_SESSION['signed_in']))
+							echo '<li><a href="signout.php"> Signout</a></li>
+							<li><a href="courses.html">Courses</a></li>
+							<li><a href="blog.html">Profile</a></li>';
+						else
+							echo '<li><a href="login.html">Login</a></li>
+						<li><a href="register.html">Register</a></li>';
+						?>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav><!-- #nav-menu-container -->
+			</div>
+		</div>
+	</header>
+	<!-- End Header Area -->
+
+	<!-- Start About Area -->
+	<section class="about-area section-gap">
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/OK_JCtrrv-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: relative;"></iframe>
+				<a href="/payment.html?id=6" style="border: 1px solid black; border-radius: 15px;margin: auto; padding: 5px; color: black;  "><center>Click here to download course pdf</center></a>
+				<br>
+				<h3><center>Price : $5</h3></center>
+			</div>
+			<br>
+			<p style="margin-left: 60px; padding: 10px;">
+				<h3>Introduction to PHP</h3><br><br>
+				PHP is a programming language for building dynamic, interactive Web sites. As a general rule, PHP programs run on a Web server, and serve Web pages to visitors on request. One of the key features of PHP is that you can embed PHP code within HTML Web pages, making it very easy for you to create dynamic content quickly.<br><br>
+
+What is Dynamic and Static Web Site<br><br>
+
+A dynamic Web page is a page whose contents can change automatically each time the page is viewed. Contrast this with a static Web page, such as a simple HTML file, which looks the same each time it’s displayed.<br><br>
+
+<b style="color: black;"> What is Interactive Web Site<br><br></b>
+
+An interactive Web site is a site that responds to input from its visitors.<br>
+•A Web forum is a good example — users can post new messages to the forum, which are then displayed on the site for all to see.<br>
+•Another simple example is a “contact us” form, where visitors interact with the page by filling out and sending a form, which is then emailed to the
+ Webmaster.<br><br>
+
+<b style="color: black;">PHP – Server-Side Scripting Language<br><br></b>
+
+PHP is a server-side scripting language, which means that PHP scripts, or programs, usually run on a Web server. The process of running a PHP script on a Web server looks like this:<br>
+1.A visitor requests a Web page by clicking a link, or typing the page’s URL into the browser’s address bar. The visitor might also send data to the Web server at the same time, either using a form embedded in a Web page, or via AJAX (Asynchronous JavaScript And XML).<br>
+2.The Web server recognizes that the requested URL is a PHP script, and instructs the PHP engine to process and run the script.<br>
+3.The script runs, and when it’s finished it usually sends an HTML page to the Web browser, which the visitor then sees on their screen.<br><br>
+
+<b style="color: black;">PHP – A Powerful Web Scripting Language<br><br></b>
+
+The interesting stuff happens when a PHP script runs. Because PHP is so flexible, a PHP script can carry out any number of interesting tasks, such as:<br>
+•Reading and processing the contents of a Web form sent by the visitor<br>
+•Reading, writing, and creating files on the Web server<br>
+•Working with data in a database stored on the Web server<br>
+•Grabbing and processing data from other Web sites and feeds<br>
+•Generating dynamic graphics, such as charts and manipulated photos<br><br>
+
+<b style="color: black;">PHP – A Great Choice for Web Applications<br><br></b>
+•Web forums that allow visitors to post messages and discuss topics<br>
+•Search engines that let people search the contents of a Web site or database<br>
+•Straw poll scripts that enable visitors to vote in polls and surveys<br>
+•Content management systems and blogs, which enable Webmasters to create sites easily with minimal technical knowledge<br>
+•Webmail applications, allowing people to send and receive email using their Web browser<br>
+•Online stores, allowing shoppers to purchase products and services over the Internet
+
+</p>
+		</div>
+	</section>
+	<!-- End About Area -->
+
+	<!-- Start Footer Area -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by Educature
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+    <!-- End Footer Area -->
+
+	<!-- ####################### Start Scroll to Top Area ####################### -->
+	<div id="back-top">
+		<a title="Go to Top" href="#"></a>
+	</div>
+	<!-- ####################### End Scroll to Top Area ####################### -->
+
+	<script src="../js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="../js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="../js/easing.min.js"></script>
+	<script src="../js/hoverIntent.js"></script>
+	<script src="../js/superfish.min.js"></script>
+	<script src="../js/jquery.ajaxchimp.min.js"></script>
+	<script src="../js/jquery.magnific-popup.min.js"></script>
+	<script src="../js/owl.carousel.min.js"></script>
+	<script src="../js/owl-carousel-thumb.min.js"></script>
+	<script src="../js/jquery.sticky.js"></script>
+	<script src="../js/jquery.nice-select.min.js"></script>
+	<script src="../js/parallax.min.js"></script>
+	<script src="../js/waypoints.min.js"></script>
+	<script src="../js/wow.min.js"></script>
+	<script src="../js/jquery.counterup.min.js"></script>
+	<script src="../js/mail-script.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+
+</html>

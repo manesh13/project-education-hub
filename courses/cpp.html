@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="../img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="codepixer">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>C++</title>
+
+	<!--
+			Google Font
+			============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500i" rel="stylesheet">
+
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+	<link rel="stylesheet" href="../css/linearicons.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/magnific-popup.css">
+	<link rel="stylesheet" href="../css/nice-select.css">
+	<link rel="stylesheet" href="../css/animate.min.css">
+	<link rel="stylesheet" href="../css/owl.carousel.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/c.css">
+</head>
+
+<body>
+
+	<!-- Start Header Area -->
+	<header id="header">
+		<div class="container">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+					<a href="index.html"><img src="../img/logo.png" alt="" title="" /></a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<?php
+						session_start();
+						if(isset($_SESSION['signed_in']))
+							echo '<li><a href="signout.php"> Signout</a></li>
+							<li><a href="courses.html">Courses</a></li>
+							<li><a href="blog.html">Profile</a></li>';
+						else
+							echo '<li><a href="login.html">Login</a></li>
+						<li><a href="register.html">Register</a></li>';
+						?>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav><!-- #nav-menu-container -->
+			</div>
+		</div>
+	</header>
+	<!-- End Header Area -->
+
+	<!-- Start About Area -->
+	<section class="about-area section-gap">
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/vLnPwxZdW4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: relative;"></iframe>
+				<a href="/payment.html?id=2" style="border: 1px solid black; border-radius: 15px;margin: auto; padding: 5px; color: black;  "><center>Click here to download course pdf</center></a>
+				<br>
+				<h3><center>Price : $8</h3></center>
+			</div>
+			<br>
+			<p style="margin-left: 60px; padding: 10px; color: black;">
+				<h4>C++ Introduction</h4><br>
+				C++ is a multi-paradigm programming language that supports object-oriented programming (OOP), created by Bjarne Stroustrup in 1983 at Bell Labs, C++ is an extension(superset) of C programming and the programs are written in C language can run in C++ compilers.<br><br>
+				C++ is used by programmers to create computer software. It is used to create general systems software, drivers for various computer devices, software for servers and software for specific applications and also widely used in the creation of video games.<br><br>
+
+C++ is used by many programmers of different types and coming from different fields. C++ is mostly used to write device driver programs, system software, and applications that depend on direct hardware manipulation under real-time constraints. It is also used to teach the basics of object-oriented features because it is simple and is also used in the fields of research. Also, many primary user interfaces and system files of Windows and Macintosh are written using C++. So, C++ is a popular, strong and frequently used programming language of this modern programming era.<br><br>
+
+<b style="color: black;">C++ supports object-oriented programming (OOP), with four significant principles of object-oriented development:<br><br></b>
+
+    Abstraction<br>
+    Encapsulation<br>
+    Inheritance<br>
+    Polymorphism<br><br>
+
+<b style="color: black;">C++ is not purely object-oriented language because of object-oriented means to works with object and classes, but in C++ you can write code without creating a class.<br><br></b>
+
+    The main focus remains on data rather than procedures.<br>
+    Object-oriented programs are segmented into parts called objects.<br>
+    Data structures are designed to categorize the objects.<br>
+    Data member and functions are tied together as a data structure.<br>
+    Data can be hidden and cannot be accessed by external functions using access specifier.<br>
+    Objects can communicate among themselves using functions.<br>
+    New data and functions can be easily added anywhere within a program whenever required.<br>
+    Since this is an object-oriented programming language, it follows a bottom up approach, i.e. the execution of codes starts from the main which resides at the lower section and then based on the member function call the working is done from the classes.<br><br>
+
+The object-oriented approach is a recent concept among programming paradigms and has various fields of progress. Object-oriented programming is a technique that provides a way of modularizing programs by creating memory area as a partition for both data and functions that can further be used as a template to create copies of modules on demand.<br><br>
+
+<b style="color: black;">C++ standard library was created after many years and it has three important parts:<br><br></b>
+
+    C++ core language provides all the building blocks including data types, variables, and literals etc.<br>
+    The C++ Standard Library has a rich set of methods for manipulating files and strings.<br>
+    The STL(Standard Template Library) provides a rich set of template classes for manipulating data structures.<br><br>
+
+ANSI stands for American National Standard Institute & the ANSI standard began an attempt to ensure that C++ codes become portable - that code written for Microsoft's compiler will compile without having any errors can run on compilers of MAC or Linux or any other compiler. So, all major C++ compilers support the ANSI Standard. <br></p>
+		</div>
+	</section>
+	<!-- End About Area -->
+
+	<!-- Start Footer Area -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by Educature
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+    <!-- End Footer Area -->
+
+	<!-- ####################### Start Scroll to Top Area ####################### -->
+	<div id="back-top">
+		<a title="Go to Top" href="#"></a>
+	</div>
+	<!-- ####################### End Scroll to Top Area ####################### -->
+
+	<script src="../js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="../js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="../js/easing.min.js"></script>
+	<script src="../js/hoverIntent.js"></script>
+	<script src="../js/superfish.min.js"></script>
+	<script src="../js/jquery.ajaxchimp.min.js"></script>
+	<script src="../js/jquery.magnific-popup.min.js"></script>
+	<script src="../js/owl.carousel.min.js"></script>
+	<script src="../js/owl-carousel-thumb.min.js"></script>
+	<script src="../js/jquery.sticky.js"></script>
+	<script src="../js/jquery.nice-select.min.js"></script>
+	<script src="../js/parallax.min.js"></script>
+	<script src="../js/waypoints.min.js"></script>
+	<script src="../js/wow.min.js"></script>
+	<script src="../js/jquery.counterup.min.js"></script>
+	<script src="../js/mail-script.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+
+</html>
